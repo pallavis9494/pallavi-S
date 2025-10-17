@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVerse | Company Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968705.png">
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-extrabold text-indigo-600 dark:text-emerald-400 tracking-tight">TechVerse</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Home</a></li>
+        <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Insights</a></li>
+        <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Resources</a></li>
+        <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Contact</a></li>
+      </ul>
+
+      <!-- Right -->
+      <div class="flex items-center space-x-4">
+        <button id="darkToggle" class="px-3 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 text-sm">🌙</button>
+        <button id="menuToggle" class="md:hidden text-2xl text-gray-700 dark:text-gray-300">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-800 border-t dark:border-gray-700 shadow-md">
+      <ul class="flex flex-col p-4 space-y-2">
+        <li><a href="#" class="block px-4 py-2 rounded-md hover:bg-indigo-100 dark:hover:bg-gray-700">Home</a></li>
+        <li><a href="#" class="block px-4 py-2 rounded-md hover:bg-indigo-100 dark:hover:bg-gray-700">Insights</a></li>
+        <li><a href="#" class="block px-4 py-2 rounded-md hover:bg-indigo-100 dark:hover:bg-gray-700">Resources</a></li>
+        <li><a href="#" class="block px-4 py-2 rounded-md hover:bg-indigo-100 dark:hover:bg-gray-700">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-gradient-to-r from-indigo-600 to-emerald-500 text-white py-20 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Welcome to TechVerse Insights</h1>
+      <p class="text-lg md:text-xl opacity-90">
+        Exploring the intersection of technology, design, and innovation shaping tomorrow.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+    <!-- Blog Posts -->
+    <section class="lg:col-span-2 space-y-8">
+
+      <!-- Search Bar -->
+      <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-4 mb-6">
+        <form class="flex items-center">
+          <input type="text" placeholder="Search articles..." class="w-full px-4 py-2 rounded-l-md border dark:border-gray-600 dark:bg-gray-700 focus:outline-none">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700">Search</button>
+        </form>
+      </div>
+
+      <!-- Blog Card 1 -->
+      <article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg overflow-hidden transition">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80"
+             alt="AI Innovation" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-indigo-600 dark:text-emerald-400 mb-3">
+            Building Smarter Futures: AI’s Role in Tomorrow’s Enterprises
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Explore how artificial intelligence is transforming industries, driving innovation, and shaping
+            smarter, data-driven organizations.
+          </p>
+          <a href="#" class="text-indigo-600 dark:text-emerald-400 font-medium hover:underline">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg overflow-hidden transition">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80"
+             alt="Data Design" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-indigo-600 dark:text-emerald-400 mb-3">
+            Data Meets Design: The Art of Intelligent Interfaces
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Discover how user experience design is evolving with predictive analytics and machine learning insights.
+          </p>
+          <a href="#" class="text-indigo-600 dark:text-emerald-400 font-medium hover:underline">Read more →</a>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg overflow-hidden transition">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+             alt="Remote Collaboration" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-indigo-600 dark:text-emerald-400 mb-3">
+            Remote Collaboration 3.0: The Hybrid Intelligence Era
+          </h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            Learn how new technologies are enabling seamless teamwork across borders and time zones.
+          </p>
+          <a href="#" class="text-indigo-600 dark:text-emerald-400 font-medium hover:underline">Read more →</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="space-y-8">
+      <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 dark:text-emerald-400 mb-4">About TechVerse</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          TechVerse is a forward-thinking tech company dedicated to advancing human innovation
+          through artificial intelligence, ethical design, and scalable digital ecosystems.
+        </p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 dark:text-emerald-400 mb-4">Popular Topics</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Artificial Intelligence</a></li>
+          <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Human-Centered Design</a></li>
+          <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Cloud Innovation</a></li>
+          <li><a href="#" class="hover:text-indigo-600 dark:hover:text-emerald-400">Sustainable Tech</a></li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+        <h3 class="text-xl font-semibold text-indigo-600 dark:text-emerald-400 mb-4">Subscribe</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-3">Get the latest insights straight to your inbox.</p>
+        <form class="flex">
+          <input type="email" placeholder="Your email" class="w-full px-3 py-2 border rounded-l-md focus:outline-none dark:bg-gray-700 dark:border-gray-600">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700">Join</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">TechVerse</h4>
+        <p class="text-gray-400">Innovating intelligently for a connected future.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="hover:text-white">Careers</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">Connect</h4>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-white">LinkedIn</a>
+          <a href="#" class="hover:text-white">Twitter</a>
+          <a href="#" class="hover:text-white">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-gray-500 mt-6">&copy; 2025 TechVerse Innovations. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
